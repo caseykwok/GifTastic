@@ -67,7 +67,9 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		var input = $("#animal_input").val();
-		if (animals.indexOf(input.toLowerCase()) === -1) {
+		if (input === "") {
+			alert("Please input an animal.");
+		} else if (animals.indexOf(input.toLowerCase()) === -1) {
 			animals.push(input.toLowerCase());
 			renderButtons();
 		} else {
