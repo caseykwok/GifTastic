@@ -23,7 +23,7 @@ $(document).ready(function() {
 		var animal = $(this).attr("name");
 		// console.log(animal);
 		var apiKey = "dc6zaTOxFJmzC";
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + apiKey + "&limit=10";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + apiKey + "&limit=10";
 		// console.log(queryURL);
 		$.ajax({
 			url: queryURL,
